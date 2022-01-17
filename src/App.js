@@ -8,8 +8,12 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 
 import Routes from "./config/Routes";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    document.title = "MFR-Movies";
+  }, []);
   return (
     <Router>
       <Route
