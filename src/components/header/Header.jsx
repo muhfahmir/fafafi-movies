@@ -33,9 +33,9 @@ const Header = () => {
         document.body.scrollTop > 100 ||
         document.documentElement.scrollTop > 100
       ) {
-        headerRef.current.classlist.add("shrink");
+        headerRef.current.classList.add("shrink");
       } else {
-        headerRef.current.classlist.remove("shrink");
+        headerRef.current.classList.remove("shrink");
       }
     };
 
@@ -50,7 +50,7 @@ const Header = () => {
       <div className="header__wrap container">
         <div className="logo">
           <img src={logo} alt="" />
-          <Link to="/">FaFaFi-Movies</Link>
+          <Link to="/">FaFaFiMovies</Link>
         </div>
         <ul className="header__nav">
           {headerNav.map((e, i) => (
