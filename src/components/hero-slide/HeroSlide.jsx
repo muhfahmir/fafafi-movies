@@ -27,7 +27,7 @@ const HeroSlide = () => {
         const response = await tmbdbApi.getMovieList(movieType.popular, {
           params,
         });
-        setMovieItems(response.results.slice(1, 4));
+        setMovieItems(response.results.slice(1, 6));
         // console.log("response movie:", response);
       } catch (error) {
         console.log("error: ", error);
@@ -44,7 +44,7 @@ const HeroSlide = () => {
         grabCursor={true}
         spaceBetween={0}
         slidesPerView={1}
-        // autoplay={{ delay: 3000 }}
+        // autoplay={{ delay: 20000 }}
       >
         {movieItems.map((item, i) => (
           <SwiperSlide key={i}>
@@ -78,10 +78,9 @@ const HeroSlideItem = (props) => {
     const modal = document.querySelector(`#modal__${item.id}`);
 
     const videos = await tmdbApi.getVideos(category.movie, item.id);
-    // console.log("videos:", videos.data.results[0]);
-    if (videos.data.results.length > 0) {
-      const videoSrc =
-        "https://www.youtube.com/embed/" + videos.data.results[0].key;
+    // console.log("videos:", videos.results[0]);
+    if (videos.results.length > 0) {
+      const videoSrc = "https://www.youtube.com/embed/" + videos.results[0].key;
       modal
         .querySelector(".modal__content > iframe")
         .setAttribute("src", videoSrc);
