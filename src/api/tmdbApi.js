@@ -11,7 +11,7 @@ export const movieType = {
   top_rated: "top_rated",
 };
 export const tvType = {
-  upcoming: "upcoming",
+  top_rated: "top_rated",
   popular: "popular",
   on_the_air: "on_the_air",
 };
