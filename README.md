@@ -1,3 +1,37 @@
+# MFRMovies
+This project is an application that displays a movie or movie that is currently trending. This collection of movies or movies is taken from [themoviedb.org](https://www.themoviedb.org/) API, by utilizing this data set, an application like this can be made. This app is made of ReactJS, SCSS, React Hooks, and others.
+
+# Requirements
+- Node
+- NPM
+- themoviedb api key
+
+# Resource
+```
+Google font: https://fonts.google.com/
+Boxicons: https://boxicons.com/
+Images: https://unsplash.com/
+API: https://www.themoviedb.org/
+```
+
+# How to Install
+Install NPM
+```
+npm install
+```
+
+Change directory to project
+```
+cd project name
+ex: cd react-movie-tmdb
+```
+
+then run it
+```
+npm start
+```
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
